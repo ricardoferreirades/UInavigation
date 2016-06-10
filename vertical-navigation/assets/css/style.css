@@ -5,8 +5,17 @@
     transition: all .5s ease;
 }
 
+html,body{
+    height: 100%;
+    font-family: helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
 nav{
-    background: gray;
+    background: #395877;
     position: fixed;
     top: 0;
     right:0;
@@ -101,18 +110,28 @@ nav{
             transform:rotate(-45deg);
 }
 
-ul{
+#list{
     position: absolute;
     top:0;
     left:100%;
     width:270px;
-    background: gray;
+    background: #243545;
     padding:0;
 }
 
-li{
+.list-item{
     list-style-type:none;
-    padding:1em;
+}
+
+.list-item .anchor{
+    color: #cccccc;
+    display:block;
+    padding: 1em;
+    
+}
+
+.list-item .anchor:hover{
+    background: #2d3b57;
 }
 
 section{
